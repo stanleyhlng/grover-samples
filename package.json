@@ -1,0 +1,16 @@
+{
+  "name": "grover-samples",
+  "version": "0.0.1",
+  "author": "Stanley Ng <stanleyn@yahoo-inc.com>",
+  "description": "Grover samples",
+  "dependencies": {},
+  "devDependencies": {
+    "grover": ">=0.1.17"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/grover test/lib/*.test.html --outfile artifacts/test/results.tap --tap"
+  }
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>user</title>
+    </head>
+    <body>
+        <div id="test-logger"></div>
+        <script src="http://yui.yahooapis.com/3.17.2/build/yui/yui-min.js"></script>
+        <script src="user.test.js"></script>
+        <script>
+            (function (global) {
+
+                YUI({
+                    logInclude: {
+                        TestRunner: true
+                    },
+                    modules: {
+                        'user': {
+                            fullpath: '../../lib/user.js'
+                        }
+                    }
+                }).use('user-tests', 'test-console', function (Y) {
+
+                    // create the console
+                    (new Y.Test.Console({
+                        verbose: true,
+                        newestOnTop: false
+                        })
+                    ).render('#test-logger');
+
+                    // run the tests
+                    Y.Test.Runner.run();
+                });
+
+            }(window));
+        </script>
+    </body>
+</html>

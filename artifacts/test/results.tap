@@ -1,0 +1,8 @@
+1..10
+#Begin testcase User(0 failed of 5)
+ok 1 - should return true
+ok 2 - should instantiate Y.User object
+ok 3 - should return "Stanley" in the first name
+ok 4 - should return "Ng" in the last name
+ok 5 - should return "stanleyn@yahoo-inc.com" in the email
+#End testcase User
