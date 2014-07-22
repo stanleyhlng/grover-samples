@@ -3,6 +3,7 @@ grover-samples
 
 samples to demonstrate grover test runner
 
+```
 ➜  grover-samples git:(master) npm i
 ➜  grover-samples git:(master) npm run-script test
 
@@ -26,3 +27,4 @@ ok 3 - should return "Stanley" in the first name
 ok 4 - should return "Ng" in the last name
 ok 5 - should return "stanleyn@yahoo-inc.com" in the email
 #End testcase User
+```
